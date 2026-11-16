@@ -12,9 +12,18 @@ void Task1()
     float x = c_x + r * cos(theta);
     float y = c_y - r * sin(theta);
 
-    DrawCircle(c_x, c_y, 5, RED);
+    DrawCircle(c_x, c_y, 10, WHITE);
 
-    DrawCircle(x, y, 5, WHITE);
+    DrawCircleLines(GetScreenWidth() / 2, GetScreenHeight() / 2, 150, WHITE);
+
+    DrawCircle(x, y, 5, GREEN);
+
+    DrawLine(GetScreenWidth() / 2, 0, GetScreenWidth() / 2, GetScreenHeight(), WHITE);
+    DrawLine(0, GetScreenHeight() / 2, GetScreenWidth(), GetScreenHeight() / 2, WHITE);
+
+    DrawLine(x, y, x + 1, GetScreenHeight() / 2, RED);
+    DrawLine(x, y, GetScreenWidth() / 2, y - 1, BLUE);
+    DrawLine(GetScreenWidth() / 2, GetScreenHeight() / 2, x, y, PURPLE);
 
     theta += 0.01f;
 
