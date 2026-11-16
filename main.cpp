@@ -1,4 +1,5 @@
-#include "raylib.h"
+#include "game_functions.h"
+
 
 
 
@@ -15,6 +16,8 @@ int main()
         BeginDrawing();
 
         ClearBackground(BLACK);
+
+        Task1();
 
         EndDrawing();
     }
