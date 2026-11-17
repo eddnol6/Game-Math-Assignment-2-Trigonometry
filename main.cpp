@@ -11,13 +11,26 @@ int main()
     InitWindow(screenWidth, screenHeight, "Trigonometry");
     SetTargetFPS(60);
 
+    float A = 150;
+    float c = 0;
+
+            std::cout << "Input an amplitude: ";
+            std::cin >> A;
+
+            std::cout << "Input a constant: ";
+            std::cin >> c;  
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
 
         ClearBackground(BLACK);
 
-        Task2();
+        //Task1()
+
+        //Task2();
+
+        Task3(A, c);
 
         EndDrawing();
     }
