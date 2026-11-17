@@ -53,7 +53,9 @@ void Task3(float A, float c)
     static float theta = 0;
     float y; 
     float x;
+
     
+
     for (x = 0; x < GetScreenWidth(); x += 1)
     {
         y = A * sin(0.01 * x + theta + c) + GetScreenHeight() / 2;
