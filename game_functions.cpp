@@ -38,11 +38,10 @@ void Task2()
 
     for (x = 0; x < GetScreenWidth(); x += 1)
     {
-        y = A * sin(x + theta) + GetScreenHeight() / 2;
+        y = A * sin(0.01 * x + theta) + GetScreenHeight() / 2;
         DrawCircle(x, y, 2, GREEN);
-        theta += 0.01f;
     }
-    
+    theta += 0.01f;
 
     DrawLine(GetScreenWidth() / 2, 0, GetScreenWidth() / 2, GetScreenHeight(), WHITE);
     DrawLine(0, GetScreenHeight() / 2, GetScreenWidth(), GetScreenHeight() / 2, WHITE);
