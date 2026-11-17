@@ -17,7 +17,7 @@ int main()
 
         ClearBackground(BLACK);
 
-        Task1();
+        Task2();
 
         EndDrawing();
     }

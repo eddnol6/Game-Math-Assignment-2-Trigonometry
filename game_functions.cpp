@@ -28,3 +28,13 @@ void Task1()
     theta += 0.01f;
 
 }
+
+void Task2()
+{
+    float A = 150;
+    static float theta = 0;
+    float y = A * sin(theta);
+
+    DrawLine(GetScreenWidth() / 2, 0, GetScreenWidth() / 2, GetScreenHeight(), WHITE);
+    DrawLine(0, GetScreenHeight() / 2, GetScreenWidth(), GetScreenHeight() / 2, WHITE);
+}
