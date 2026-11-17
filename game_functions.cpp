@@ -31,10 +31,20 @@ void Task1()
 
 void Task2()
 {
-    float A = 150;
+    const float A = 150;
     static float theta = 0;
-    float y = A * sin(theta);
+    float y; 
+    float x;
+
+    for (x = 0; x < GetScreenWidth(); x += 1)
+    {
+        y = A * sin(x + theta) + GetScreenHeight() / 2;
+        DrawCircle(x, y, 2, GREEN);
+        theta += 0.01f;
+    }
+    
 
     DrawLine(GetScreenWidth() / 2, 0, GetScreenWidth() / 2, GetScreenHeight(), WHITE);
     DrawLine(0, GetScreenHeight() / 2, GetScreenWidth(), GetScreenHeight() / 2, WHITE);
+
 }
