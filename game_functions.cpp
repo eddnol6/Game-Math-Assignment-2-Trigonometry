@@ -126,9 +126,6 @@ void Task6(float r)
 {
     static float theta = 0;
 
-    float y; 
-    float x;
-
     float c_x = (GetScreenWidth() / 2) * sin(theta) + (GetScreenWidth() / 2);
     float c_y = GetScreenHeight() / 2;
 
