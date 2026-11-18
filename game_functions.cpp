@@ -126,14 +126,15 @@ void Task6(float r)
 {
     const float A = 150;
     static float theta = 0;
+    float omega = 0;
 
     float y; 
     float x;
 
-    float c_x = GetScreenWidth() / 2;
-    float c_y = GetScreenHeight() / 2;
+    float c_x = A * cos(0.01 * x + theta + 25) + GetScreenHeight() / 2;
+    float c_y = A * sin(0.01 * x + theta + 25) + GetScreenWidth() / 2;
 
-    
+
 
     float x_1 = c_x + r * cos(theta);
     float y_1 = c_y - r * sin(theta);
@@ -149,7 +150,7 @@ void Task6(float r)
 
     for (x = 0; x < GetScreenWidth(); x += 1)
     {
-        y = A * sin(0.01 * x + theta) + GetScreenHeight() / 2;
+        y = A * sin(0.01 * x + omega + 25) + GetScreenHeight() / 2;
         DrawCircle(x, y, 2, GREEN);
     }
 
