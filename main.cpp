@@ -11,8 +11,13 @@ int main()
     InitWindow(screenWidth, screenHeight, "Trigonometry");
     SetTargetFPS(60);
 
-    float A = 150;
-    float c = 0;
+    //Task 3
+    //float A = 150;
+    //float c = 0;
+
+
+    //Task 4
+    //float r = 150;
 
     while (!WindowShouldClose())
     {
@@ -20,31 +25,50 @@ int main()
 
         ClearBackground(BLACK);
 
-        //Task1()
+            //Task1()
 
-        //Task2();
+            //Task2();
 
-        if (IsKeyDown(KEY_UP))
-        {
-            A++;
-        }
+        /*
+            if (IsKeyDown(KEY_UP))
+            {
+                A++;
+            }
 
-        if (IsKeyDown(KEY_DOWN))
-        {
-            A--;
-        }
+            if (IsKeyDown(KEY_DOWN))
+            {
+                A--;
+            }
 
-        if (IsKeyDown(KEY_LEFT))
-        {
-            c -= 0.03f;
-        }
+            if (IsKeyDown(KEY_LEFT))
+            {
+                c -= 0.03f;
+            }
 
-        if (IsKeyDown(KEY_RIGHT))
-        {
-            c += 0.01f;
-        }
+            if (IsKeyDown(KEY_RIGHT))
+            {
+                c += 0.01f;
+            }
 
-        Task3(A, c);
+            Task3(A, c);
+        */
+
+        /*
+
+            if (IsKeyDown(KEY_UP))
+            {
+                r++;
+            }
+
+            if (IsKeyDown(KEY_DOWN))
+            {
+                r--;
+            }
+
+            Task4(r);
+        */
+
+        
 
         EndDrawing();
     }

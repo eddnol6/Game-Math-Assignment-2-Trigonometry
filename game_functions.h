@@ -5,3 +5,4 @@
 void Task1();
 void Task2();
 void Task3(float A, float c);
+void Task4(float r);
