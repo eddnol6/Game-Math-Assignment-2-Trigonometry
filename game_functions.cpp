@@ -124,17 +124,13 @@ void Task5(float r)
 
 void Task6(float r)
 {
-    const float A = 150;
     static float theta = 0;
-    float omega = 0;
 
     float y; 
     float x;
 
-    float c_x = A * cos(0.01 * x + theta + 25) + GetScreenHeight() / 2;
-    float c_y = A * sin(0.01 * x + theta + 25) + GetScreenWidth() / 2;
-
-
+    float c_x = (GetScreenWidth() / 2) * sin(theta) + (GetScreenWidth() / 2);
+    float c_y = GetScreenHeight() / 2;
 
     float x_1 = c_x + r * cos(theta);
     float y_1 = c_y - r * sin(theta);
@@ -148,14 +144,6 @@ void Task6(float r)
     float x_4 = c_x + r * cos(theta + (1.5f * PI));
     float y_4 = c_y - r * sin(theta + (1.5f * PI));
 
-    for (x = 0; x < GetScreenWidth(); x += 1)
-    {
-        y = A * sin(0.01 * x + omega + 25) + GetScreenHeight() / 2;
-        DrawCircle(x, y, 2, GREEN);
-    }
-
-
-
     DrawCircle(c_x, c_y, 10, WHITE);
 
     DrawCircle(x_1, y_1, 5, RED);
@@ -167,6 +155,8 @@ void Task6(float r)
     DrawLine(x_2, y_2, x_3, y_3, WHITE);
     DrawLine(x_3, y_3, x_4, y_4, WHITE);
     DrawLine(x_4, y_4, x_1, y_1, WHITE);
+
+    DrawLine(0, GetScreenHeight() / 2, GetScreenWidth(), GetScreenHeight() / 2, WHITE);
 
     theta += 0.01f;
 }
