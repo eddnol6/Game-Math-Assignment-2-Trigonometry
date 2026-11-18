@@ -71,6 +71,16 @@ int main()
             Task4(r);
         */
 
+            if (IsKeyDown(KEY_UP))
+            {
+                r++;
+            }
+
+            if (IsKeyDown(KEY_DOWN))
+            {
+                r--;
+            }
+
             Task5(r);
 
         EndDrawing();
