@@ -19,6 +19,9 @@ int main()
     //Task 4
     //float r = 150;
 
+    //Task 5
+    float r = 150;
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -68,7 +71,7 @@ int main()
             Task4(r);
         */
 
-        
+            Task5(r);
 
         EndDrawing();
     }
