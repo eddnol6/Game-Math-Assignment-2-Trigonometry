@@ -7,3 +7,4 @@ void Task2();
 void Task3(float A, float c);
 void Task4(float r);
 void Task5(float r);
+void Task6(float r);

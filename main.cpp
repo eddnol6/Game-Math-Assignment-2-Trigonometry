@@ -20,7 +20,10 @@ int main()
     //float r = 150;
 
     //Task 5
-    float r = 150;
+    //float r = 150;
+
+    //Task 6
+    //float r = 150;
 
     while (!WindowShouldClose())
     {
@@ -71,6 +74,7 @@ int main()
             Task4(r);
         */
 
+        /*
             if (IsKeyDown(KEY_UP))
             {
                 r++;
@@ -82,6 +86,21 @@ int main()
             }
 
             Task5(r);
+        */
+
+        /*
+            if (IsKeyDown(KEY_UP))
+            {
+                r++;
+            }
+
+            if (IsKeyDown(KEY_DOWN))
+            {
+                r--;
+            }
+
+            Task6();
+        */
 
         EndDrawing();
     }
